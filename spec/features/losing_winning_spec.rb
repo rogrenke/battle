@@ -5,7 +5,6 @@ feature 'losing' do
       click_button('Attack')
       click_button('Ok')
     end
-    save_and_open_page
     expect(page).to have_content('Enrique: 0')
     expect(page).to have_content('Enrique lost')
   end
